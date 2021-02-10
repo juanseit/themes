@@ -39,13 +39,13 @@ gt_theme_538 <- function(data,...) {
     ) 
 }
 
-theme_539 <- function(base_size = 12, base_family = "Chivo") {
+theme_539 <- function(base_size = 12) {
   
-  theme_grey(base_size = base_size, base_family = base_family) %+replace%
+  theme_grey(base_size = base_size) %+replace%
     theme(
       panel.grid.minor = element_blank(),
       axis.ticks = element_blank(),
-      text = element_text(family = "Chivo", size = base_size),
+      text = element_text(size = base_size),
       axis.text = element_text(face = "bold", color = "grey", size = base_size),
       axis.title = element_text(face = "bold", size = rel(1.33)),
       axis.title.x = element_text(margin = margin(0.5, 0, 0, 0, unit = "cm")),
